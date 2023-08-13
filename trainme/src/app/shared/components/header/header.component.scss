@@ -1,0 +1,17 @@
+.headercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigationcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  * {
+    padding: 1rem;
+    margin: 0;
+  }
+}
