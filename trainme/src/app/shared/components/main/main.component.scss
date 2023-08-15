@@ -1,0 +1,14 @@
+.landingPageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.landingpageElement {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mainElement {
+  flex-grow: 1;
+}

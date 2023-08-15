@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { LandingPageComponent } from './shared/components/landing-page/landing-page.component';
+import { MainComponent } from './shared/components/main/main.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: LandingPageComponent,
+    component: MainComponent,
   },
   {
     path: 'auth',
