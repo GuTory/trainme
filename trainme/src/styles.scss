@@ -1,20 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-app-root {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-app-landing-page {
-  flex-grow: 1;
-}
-
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

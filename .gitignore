@@ -6,3 +6,5 @@ trainme/src/environments/*
 .gradle/8.0.2/checksums/sha1-checksums.bin
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
 .gradle/buildOutputCleanup/cache.properties
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
