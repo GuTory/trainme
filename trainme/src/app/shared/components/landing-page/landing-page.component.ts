@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -10,4 +11,5 @@ import { CommonModule } from '@angular/common';
 })
 export class LandingPageComponent {
 
+  constructor(public ThemeService: ThemeService) { }
 }

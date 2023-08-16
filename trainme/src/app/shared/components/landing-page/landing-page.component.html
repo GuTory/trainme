@@ -1,5 +1,5 @@
-<main>
-  <section>
+<main [ngClass]="ThemeService.getDarkTheme() ? 'dark' : ''">
+  <section class="bg-slate-500 dark:bg-gray-900">
     this is the main section of the page
   </section>
 </main>

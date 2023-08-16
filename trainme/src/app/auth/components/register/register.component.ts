@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import {
   FormBuilder,
   FormControl,
@@ -13,7 +13,6 @@ import { TuiInputModule } from '@taiga-ui/kit';
   selector: 'app-register',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, TuiInputModule],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
 })

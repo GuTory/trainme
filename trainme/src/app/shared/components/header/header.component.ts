@@ -2,19 +2,23 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { TuiToggleModule } from '@taiga-ui/kit';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [CommonModule, TuiToggleModule, RouterLink],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  themeToggle = false;
+  isDark: boolean | undefined;
+
+  constructor(private themeService: ThemeService) {
+    this.isDark = this.themeService.getDarkTheme();
+  }
 
   onToggle() {
-    this.themeToggle = !this.themeToggle;
-    console.log(this.themeToggle);
+    this.isDark = this.themeService.toggleTheme();
   }
 }

@@ -11,6 +11,9 @@
           "style": "scss",
           "standalone": true
         },
+        "@schematics/angular:service": {
+          "skipTests": true
+        },
         "@schematics/angular:directive": {
           "standalone": true
         },

@@ -16,6 +16,8 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '../components/footer/footer.component';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { HeaderComponent } from '../components/header/header.component';
+import { ThemeDirective } from '../directives/theme.directive';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -30,6 +32,7 @@ import { HeaderComponent } from '../components/header/header.component';
     NavbarComponent,
     LayoutModule,
     HeaderComponent,
+    ThemeDirective,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
@@ -38,7 +41,8 @@ import { HeaderComponent } from '../components/header/header.component';
 export class AppComponent implements OnInit {
   title = 'trainme';
 
-  constructor(private breakPointObserver: BreakpointObserver) {}
+  constructor(private breakPointObserver: BreakpointObserver,
+    public themeService: ThemeService) {}
 
   ngOnInit(): void {
     this.breakPointObserver
