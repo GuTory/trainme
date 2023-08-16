@@ -1,0 +1,7 @@
+<div>
+  <app-header></app-header>
+  <router-outlet
+    [ngClass]="themeService.getDarkTheme() ? 'dark' : ''"
+  ></router-outlet>
+</div>
+<app-footer></app-footer>

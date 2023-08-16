@@ -1,0 +1,38 @@
+<ng-container *ngTemplateOutlet="registrationtemplate"> </ng-container>
+
+<ng-template #registrationtemplate>
+  <div class="row">
+    <div class="col-md-6 offset-md-3 col-xs-12">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <label for="username"> Username</label>
+        <tui-input class="form-group">
+          <input
+            tuiTextfield
+            id="username"
+            type="text"
+            placeholder="Start typing your username"
+            formControlName="username"
+          />
+        </tui-input>
+        <tui-input class="form-group">
+          <input
+            tuiTextfield
+            type="text"
+            placeholder="Email"
+            formControlName="email"
+          />
+        </tui-input>
+        <tui-input class="form-group">
+          <input
+            tuiTextfield
+            type="password"
+            placeholder="Password"
+            formControlName="password"
+          />
+        </tui-input>
+
+        <button class="btn btn-primary">Sign up</button>
+      </form>
+    </div>
+  </div>
+</ng-template>
